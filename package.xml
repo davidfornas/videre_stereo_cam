@@ -1,0 +1,49 @@
+
+
+<package>
+
+  <name>videre_stereo_cam</name>
+  <version>0.5.0</version>
+  <description> 
+	        This driver supports both regular and STOC Videre Stereo cameras. It exposes standard ROS interface for
+        cameras and publishes camera_info and image_raw topics pair for both left and right imager of the stereo
+        camera. This set of topics can change depending on the selected processing mode (STOC devices only). Most
+        of the configuration can be done while driver is running via dynamic_reconfigure GUI.
+  </description>
+  <author email="xxx@gmail.com">Antons Rebguns</author>
+  <maintainer email="xxx@gmail.com">Antons Rebguns</maintainer>
+  <maintainer email="dfornas@uji.es">David Fornas</maintainer>
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/videre_stereo_cam</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+ 
+  <build_depend>roscpp</build_depend>
+  <build_depend>stereo_image_proc</build_depend>    
+  <build_depend>diagnostic_updater</build_depend>  
+  <build_depend>image_transport</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>stereo_msgs</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+  <build_depend>driver_base</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>libdc1394-dev</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>stereo_image_proc</run_depend>    
+  <run_depend>diagnostic_updater</run_depend>  
+  <run_depend>image_transport</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>stereo_msgs</run_depend>
+  <run_depend>dynamic_reconfigure</run_depend>
+  <run_depend>driver_base</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>cv_bridge</run_depend>
+  <run_depend>libdc1394-dev</run_depend>
+
+</package>
+
+
+
