@@ -13,10 +13,11 @@
             <!--param name="gain" type="int" value="10"/-->
             <param name="gain_auto" type="bool" value="True"/>
         </node>
-        
-        <node name="stereo_image_proc" pkg="stereo_image_proc" type="stereo_image_proc"  output="screen">
-		<param name="disparity_range" type="double" value="112.0"/>
-	</node>
+        <group ns="left">
+        	<node name="image_proc" pkg="image_proc" type="image_proc"  output="screen">
+			<param name="disparity_range" type="double" value="112.0"/>
+		</node>
+	</group>
     </group>
 </launch>
 
