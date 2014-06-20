@@ -16,9 +16,6 @@
         <group ns="left">
         	<node name="image_proc" pkg="image_proc" type="image_proc"  output="screen"/>
 		</group>
-        <group ns="right">
-        	<node name="image_proc" pkg="image_proc" type="image_proc"  output="screen"/>
-		</group>
     </group>
 </launch>
 
