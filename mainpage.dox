@@ -2,25 +2,29 @@
 \mainpage
 \htmlinclude manifest.html
 
-\b videre_stereo_cam is ... 
+\b videre_stereo_cam is a driver that allows to use the Videre Stereo Camera within ROS. 
 
 <!-- 
-Provide an overview of your package.
+This package allows to use a Videre Stereo Camera within ROS environment. 
+It doesn't work properly using the on-chip stereo processing so it has been 
+slightly modified to use hardcoded parameters allowing ROS calibration and stereo processing.
+
+This package has been catkinized although disparity_view is not being
+compiled because it works with legacy code.
+
+TODO:Implement set_camera_info service.
 -->
 
 
 \section codeapi Code API
 
 <!--
-Provide links to specific auto-generated API documentation within your
-package that is of particular interest to a reader. Doxygen will
-document pretty much every part of your code, so do your best here to
-point the reader to the actual API.
+Hard coded parameters are set on StereoData::parseCalibrationSVS
 
-If your codebase is fairly large or has different sets of APIs, you
-should use the doxygen 'group' tag to keep these APIs together. For
-example, the roscpp documentation has 'libros' group.
+Parameters shouldn't be changed on the flight with rqt or dynamic_reconfigure.
+Set them in launchfiles instead and restart driver.
 -->
+
 
 
 */
