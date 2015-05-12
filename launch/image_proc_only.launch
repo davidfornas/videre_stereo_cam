@@ -1,0 +1,8 @@
+<launch>
+    <group ns="stereo">
+        <node name="stereo_image_proc" pkg="stereo_image_proc" type="stereo_image_proc"  output="screen">
+		<param name="disparity_range" type="double" value="124.0"/>
+	</node>
+    </group>
+</launch>
+
